@@ -1,12 +1,16 @@
 import { Button } from "@/components/ui/button";
+import { CheckInDialog } from "@/components/check-in-dialog";
 
 export default function AdminDashboard() {
     return (
         <div className="space-y-8">
             <div>
                 <h2 className="text-2xl font-bold mb-4">Daily Check-in</h2>
-                <div className="p-8 border rounded-lg border-dashed text-center text-muted-foreground">
-                    Form Placeholder
+                <div className="p-8 border rounded-lg bg-card shadow-sm flex flex-col items-center justify-center gap-4">
+                    <p className="text-muted-foreground">
+                        Has anything interesting happened today?
+                    </p>
+                    <CheckInDialog />
                 </div>
             </div>
 
