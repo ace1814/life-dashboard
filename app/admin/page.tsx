@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckInDialog } from "@/components/check-in-dialog";
+import { BookSearch } from "@/components/book-search";
 
 export default function AdminDashboard() {
     return (
@@ -21,7 +22,7 @@ export default function AdminDashboard() {
                 </div>
                 <div>
                     <h3 className="text-lg font-semibold mb-2">Reading List</h3>
-                    <Button variant="outline">Add Book</Button>
+                    <BookSearch />
                 </div>
             </div>
         </div>
